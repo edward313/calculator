@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -35,9 +36,24 @@ namespace Buoi07_TinhToan3
         private void btnTinh_Click(object sender, EventArgs e)
         {
             //lấy giá trị của 2 ô số
-            double so1, so2, kq = 0;
-            so1 = double.Parse(txtSo1.Text);
-            so2 = double.Parse(txtSo2.Text);
+            decimal so1, so2, kq = 0;
+            if(!IsNumber(txtSo1.Text) || !IsNumber(txtSo2.Text))
+            {
+                DialogResult dl;
+                dl = MessageBox.Show("Không được nhập chữ",
+                                     "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            so1 = decimal.Parse(txtSo1.Text);
+            so2 = decimal.Parse(txtSo2.Text);
+
+            if (so2 == 0 && radChia.Checked)
+            {
+                DialogResult dl;
+                dl = MessageBox.Show("Không chia được cho số 0",
+                                     "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             //Thực hiện phép tính dựa vào phép toán được chọn
             if (radCong.Checked) kq = so1 + so2;
             else if (radTru.Checked) kq = so1 - so2;
@@ -45,6 +61,12 @@ namespace Buoi07_TinhToan3
             else if (radChia.Checked && so2 != 0) kq = so1 / so2;
             //Hiển thị kết quả lên trên ô kết quả
             txtKq.Text = kq.ToString();
+        }
+
+        public bool IsNumber(string pText)
+        {
+            Regex regex = new Regex(@"^[-+]?[0-9]*.?[0-9]+$");
+            return regex.IsMatch(pText);
         }
     }
 }

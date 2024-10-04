@@ -26,3 +26,13 @@ E:\bt\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.csproj.GenerateResource.cache
 E:\bt\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.csproj.CoreCompileInputs.cache
 E:\bt\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.exe
 E:\bt\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.pdb
+E:\bt\calculator\bin\Debug\Buoi07_TinhToan3.exe.config
+E:\bt\calculator\bin\Debug\Buoi07_TinhToan3.exe
+E:\bt\calculator\bin\Debug\Buoi07_TinhToan3.pdb
+E:\bt\calculator\obj\Debug\Buoi07_TinhToan3.csproj.AssemblyReference.cache
+E:\bt\calculator\obj\Debug\Buoi07_TinhToan3.Form1.resources
+E:\bt\calculator\obj\Debug\Buoi07_TinhToan3.Properties.Resources.resources
+E:\bt\calculator\obj\Debug\Buoi07_TinhToan3.csproj.GenerateResource.cache
+E:\bt\calculator\obj\Debug\Buoi07_TinhToan3.csproj.CoreCompileInputs.cache
+E:\bt\calculator\obj\Debug\Buoi07_TinhToan3.exe
+E:\bt\calculator\obj\Debug\Buoi07_TinhToan3.pdb
